@@ -367,7 +367,7 @@ ul#menuIcons li a:hover {
 	width: 149px;
 	height: 35px;
 	display: block;
-	background: url(../img/logo.svg) no-repeat 0 0;
+	background: url(../../assets/images/logo.svg) no-repeat 0 0;
 	background-size: 149px 35px;
 	text-indent: -9999px;
 }
@@ -504,7 +504,7 @@ ul#subFooterLinks i {
 }
 
 .hero-home.bg-mockup {
-	background: #3f4079 url(../img/bg/bg.svg) no-repeat center bottom;
+	background: #3f4079 url(../../assets/images/bg/bg.svg) no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
