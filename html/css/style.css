@@ -376,7 +376,7 @@ ul#menuIcons li a:hover {
 ==================================== */
 
 .sub-header {
-	background-color: #ff7b79;
+	background-color: #274472;
 	padding: 15px 0;
 	margin-top: 59px;
 }
@@ -2048,4 +2048,10 @@ label.cbx {
 
 #about-me .about-me .me .social{
 	text-align: center;
+}
+
+/* Salary calc */
+
+.form-check {
+	padding: 5px;
 }
