@@ -101,43 +101,43 @@
 									<div class="col-lg-4">
 										<div class="form-group">
 											<label for="NIK">NIK</label>
-											<input id="NIK" class="form-control" name="NIK" type="number" required maxlength="16"/>
+											<input id="NIK" class="form-control" name="NIK" type="text" required maxlength="16"/>
 										</div>
 									</div>
 									<div class="col-lg-8">
 										<div class="form-group">
-											<label for="Nama">Nama Lengkap</label>
+											<label for="Nama">Full Name</label>
 											<input id="Nama" class="form-control" name="Nama" type="text" required/>
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-6">
 										<select id="golongan" class="wide" name="optionGolongan">
-											<option value="">Pilih Golongan Pegawai</option>
-											<option value="1">Golongan 1</option>
-											<option value="2">Golongan 2</option>
-											<option value="3">Golongan 3</option>
-											<option value="4">Golongan 4</option>
+											<option value="">Select Employee Class</option>
+											<option value="1">Class 1</option>
+											<option value="2">Class 2</option>
+											<option value="3">Class 3</option>
+											<option value="4">Class 4</option>
 										</select>
 									</div>
 									<div class="col-md-6 col-sm-6">
 										<select id="status" class="wide" name="optionPernikahan">
-											<option value="">Pilih Status Pernikahan</option>
-											<option value="Belum Menikah">Belum Menikah</option>
-											<option value="Sudah Menikah">Sudah Menikah</option>
-											<option value="Cerai">Cerai</option>
+											<option value="">Select Marital Status</option>
+											<option value="Belum Menikah">Not Married Yet</option>
+											<option value="Sudah Menikah">Married</option>
+											<option value="Cerai">Divorced</option>
 										</select>
 									</div>
 									<div class="col-lg-12">
-										<label class="text_jenkel" for="jenis_kelamin" style="margin-top: 20px;">Jenis Kelamin</label>
+										<label class="text_jenkel" for="jenis_kelamin" style="margin-top: 20px;">Sex</label>
 									</div>
 									<div class="col-lg-12">
 										<div class="form-check form-check-inline">
 											<input class="form-check-input" type="radio" name="jenis_kelamin" id="pria" value="Pria">
-											<label class="form-check-label" for="inlineRadioPria">Pria</label>
+											<label class="form-check-label" for="inlineRadioPria">Man</label>
 										</div>
 										<div class="form-check form-check-inline">
 											<input class="form-check-input" type="radio" name="jenis_kelamin" id="wanita" value="Wanita">
-											<label class="form-check-label" for="inlineRadioWanita">Wanita</label>
+											<label class="form-check-label" for="inlineRadioWanita">Woman</label>
 										</div>
 									</div>
 								</div>
@@ -147,7 +147,7 @@
 									<!-- Order Container -->
 										<div class="row">
 											<div class="col-lg-12">
-												<button type="submit" id="btn1" name="submit" class="btn-form-func" data-toggle="modal" data-target="#exampleModalLong">
+												<button type="submit" id="btn1" name="submit" class="btn-form-func">
 													<span class="btn-form-func-content">SUBMIT</span>
 													<span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
 												</button>
@@ -178,7 +178,7 @@
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLongTitle">Salary Report</h5>
+						<h5 class="modal-title" id="exampleModalLongTitle"></h5>
 					</div>
 					<div class="modal-body">
 						<!--OUTPUT-->
@@ -188,40 +188,39 @@
 								<td id="output-nik"></td>
 							</tr>
 							<tr>
-								<th>Nama Lengkap</th>
+								<th>Full Name</th>
 								<td id="output-nama"></td>
 							</tr>
 							<tr>
-								<th>Jenis Kelamin</th>
+								<th>Sex</th>
 								<td id="output-jenkel"></td>
 							</tr>
 							<tr>
-								<th>Golongan Pegawai</th>
+								<th>Employee Class</th>
 								<td id="output-golongan"></td>
 							</tr>
 							<tr>
-								<th>Status Pernikahan</th>
+								<th>Marrital Status</th>
 								<td id="output-pernikahan"></td>
 							</tr>
 							<tr>
-								<th>Gaji Pokok</th>
+								<th>Basic Salary</th>
 								<td id="output-gapok"></td>
 							</tr>
 							<tr>
-								<th>Tunjangan</th>
+								<th>Allowance</th>
 								<td id="output-tunjangan"></td>
 							</tr>
 							<tr>
-								<th>Potongan</th>
+								<th>Deduction Salary</th>
 								<td id="output-potongan"></td>
 							</tr>
 							<tr>
-								<th>Total Gaji</th>
+								<th>Total Salary</th>
 								<td id="output-gaji"></td>
 							</tr>
 							<tr>
-								<td style="font-size: smaller;">Total Gaji = (Gaji Pokok + Tunjangan) - Potongan</td>
-								<td></td>
+								<td colspan="2"><small> Total Salary = (Basic Salary + Allowance) - Deduction Salary </small></td>
 							</tr>
 						</table>
 						<!--OUTPUT-->
@@ -294,6 +293,7 @@
 
 	<!-- Main Javascript File -->
 	<script src="../assets/js/scripts.js"></script>
+	<script src="../assets/js/calculate.js"></script>
 
 </body>
 
