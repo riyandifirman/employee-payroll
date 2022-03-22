@@ -113,7 +113,7 @@
 									</div>
 									<div class="col-md-6 col-sm-6">
 										<select class="wide" name="optionGolongan">
-											<option value="">Pilih Golongan Karyawan</option>
+											<option value="">Pilih Golongan Pegawai</option>
 											<option value="1">Golongan 1</option>
 											<option value="2">Golongan 2</option>
 											<option value="3">Golongan 3</option>
@@ -177,23 +177,63 @@
 		<!-- Modal -->
 		<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 			<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle">Salary Report</h5>
+					</div>
+					<div class="modal-body">
+						<!--OUTPUT-->
+						<table class="table">
+							<tr>
+								<th>NIK</th>
+								<td id="output-nik"></td>
+							</tr>
+							<tr>
+								<th>Nama Lengkap</th>
+								<td id="output-nama"></td>
+							</tr>
+							<tr>
+								<th>Jenis Kelamin</th>
+								<td id="output-jenkel"></td>
+							</tr>
+							<tr>
+								<th>Golongan Pegawai</th>
+								<td id="output-golongan"></td>
+							</tr>
+							<tr>
+								<th>Status Pernikahan</th>
+								<td id="output-pernikahan"></td>
+							</tr>
+							<tr>
+								<th>Gaji Pokok</th>
+								<td id="output-gapok"></td>
+							</tr>
+							<tr>
+								<th>Tunjangan</th>
+								<td id="output-tunjangan"></td>
+							</tr>
+							<tr>
+								<th>Potongan</th>
+								<td id="output-potongan"></td>
+							</tr>
+							<tr>
+								<th>Total Gaji</th>
+								<td id="output-gaji"></td>
+							</tr>
+							<tr>
+								<td style="font-size: smaller;">Total Gaji = (Gaji Pokok + Tunjangan) - Potongan</td>
+								<td></td>
+							</tr>
+						</table>
+						<!--OUTPUT-->
+					</div>
+					<div class="modal-footer">
+						<button type="button" name="submit" class="btn-form-func" data-dismiss="modal">
+							<span class="btn-form-func-content">CLOSE</span>
+							<span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+						</button>
+					</div>
 				</div>
-				<div class="modal-body">
-				...
-				</div>
-				<div class="modal-footer">
-				<button type="button" name="submit" class="btn-form-func" data-dismiss="modal">
-					<span class="btn-form-func-content">CLOSE</span>
-					<span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
-				</button>
-				</div>
-			</div>
 			</div>
 		</div>
 		<!-- Footer -->
@@ -232,6 +272,8 @@
 			</div>
 		</footer>
 		<!-- Footer End -->
+	
+
 	</div>
 	<!-- Page End -->
 
