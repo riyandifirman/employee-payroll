@@ -29,17 +29,17 @@ $('body').on('submit', '#orderForm', function(e){
         potongan = 250000;
     }
 
-    if (status == "Belum Menikah") {
+    if (status == "Not Married Yet") {
         tunjangan = 200000;
-    } else if (status == "Sudah Menikah") {
+    } else if (status == "Married") {
         tunjangan = 400000;
-    } else if (status == "Cerai") {
+    } else if (status == "Divorced") {
         tunjangan = 250000;
     }
 
-    if (jenkel == "Pria") {
+    if (jenkel == "Man") {
         titlename = "Mr.";
-    } else if (jenkel == "Wanita") {
+    } else if (jenkel == "Woman") {
         titlename = "Mrs.";
     }
 
