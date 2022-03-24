@@ -8,7 +8,11 @@ Intended to fulfill one of the assignments for the Software Construction course
 2. Open index.html
 
 ## Implemented Configuration :bulb:
-
+- Hypertext Markup Languange
+- Cascading Style Sheets
+- JavaScript
+- Bootstrap
+- jQuery
 
 ## Parameters Used :information_source:
 - Employee Class
